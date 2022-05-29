@@ -1,0 +1,50 @@
+/* Estilos */
+.container{
+    background-color: aliceblue;
+    display: flex;
+
+}
+
+.container > div{
+    width: 50%;
+}
+
+.region{
+    background-color: lightblue;
+    margin: 2%;
+    border-radius: 15px;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.button{
+    background-color: greenyellow;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.round{
+    border-radius: 8px;
+}
+
+.shadow{
+    box-shadow: 1px 1px 5px black;
+}
+
+/* Configuración */
+
+textarea{
+    resize: none;
+    font-size: 20px;
+}
+
+input{
+    font-size: 20px;
+}

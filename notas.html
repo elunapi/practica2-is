@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--  Título -->
+    <title>Notas</title>
+
+</head>
+
+<body>
+
+<!-- Encabezado -->
+<h1>
+    Bienvenidos a NOTAS v1.0
+</h1>
+
+<div class="container">
+
+    <div style="background-color: lightgrey;">
+        <div class="region" >
+            <div class="container round shadow">
+                <div class="column">
+                    <input class="round" type="text" placeholder="Título">
+                    <textarea class="round" style="margin-top: 2%;" name="Nota" id="nota" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+                </div>
+                <div class="column">
+                    <button class="button round">
+                        Cambiar color del título
+                    </button>
+                    <button class="button round">
+                        Cambiar color de la fuente
+                    </button>
+                    <button class="button round">
+                        Limpiar texto
+                    </button>
+                    <button onclick="guardarNota()" class="button round">
+                        Guardar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: lightcoral;">
+        <div class="region" id="listaNotas">
+            <div class="container round shadow">
+                Notas...
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="notas.js"></script>
+</html>
