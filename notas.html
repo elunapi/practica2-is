@@ -12,10 +12,10 @@
 
 </head>
 
-<body>
+<body style="background-color: rgb(56, 47, 187)">
 
 <!-- Encabezado -->
-<h1>
+<h1  style="color:lightblue; text-align:center">
     Bienvenidos a NOTAS v1.0
 </h1>
 
@@ -29,10 +29,10 @@
                     <textarea class="round" style="margin-top: 2%;" name="Nota" id="textoNota" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
                 </div>
                 <div class="column">
-                    <button class="button round">
+                    <button  onclick="cambiarColorTitulo()" class="button round" id="botonTitulo">
                         Cambiar color del título
                     </button>
-                    <button class="button round">
+                    <button onclick="cambiarColorTexto()" class="button round" id="botonTexto">
                         Cambiar color de la fuente
                     </button>
                     <button onclick="limpiarTexto()" class="button round">
@@ -47,8 +47,8 @@
     </div>
     <div style="background-color: lightcoral;">
         <div class="region" id="listaNotas">
-            <div class="container round shadow" id="j">
-                Notas...
+            <div class="container round shadow" style = "font-size: 40px;"id="j">
+                Notas
             </div>
         </div>
     </div>
