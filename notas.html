@@ -25,8 +25,8 @@
         <div class="region" >
             <div class="container round shadow">
                 <div class="column">
-                    <input class="round" type="text" placeholder="Título">
-                    <textarea class="round" style="margin-top: 2%;" name="Nota" id="nota" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+                    <input class="round" type="text" placeholder="Título" id="tituloNota">
+                    <textarea class="round" style="margin-top: 2%;" name="Nota" id="textoNota" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
                 </div>
                 <div class="column">
                     <button class="button round">
@@ -35,7 +35,7 @@
                     <button class="button round">
                         Cambiar color de la fuente
                     </button>
-                    <button class="button round">
+                    <button onclick="limpiarTexto()" class="button round">
                         Limpiar texto
                     </button>
                     <button onclick="guardarNota()" class="button round">
@@ -47,7 +47,7 @@
     </div>
     <div style="background-color: lightcoral;">
         <div class="region" id="listaNotas">
-            <div class="container round shadow">
+            <div class="container round shadow" id="j">
                 Notas...
             </div>
         </div>
